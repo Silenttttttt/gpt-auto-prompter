@@ -36,7 +36,7 @@ class Chatbot:
 
 #self.handle_error_response
 class Conversation:
-    def __init__(self):##HERE THE PRE PROMPT IS INSERTED
+    def __init__(self):
         self.messages = []
 
     def add_message(self, role, content):
