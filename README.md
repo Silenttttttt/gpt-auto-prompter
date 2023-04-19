@@ -8,8 +8,14 @@ Python 3.10.10+
 OpenAI Python Library: Install it with `pip install openai`
 
 
-Autoprompt and Interacting with the Chatbot
-The main feature of this program is the autoprompt, which helps users get more accurate and relevant responses from the chatbot by clarifying their inputs, or wild outputs, this is completely untested.
+
+How the program works:
+
+
+The program works by simulating a conversation between the user and the chatbot. When the user inputs a message, the chatbot processes it and responds accordingly. The autoprompt feature comes into play by taking the user's input, as well as the chatbot's response, and passing them through another instance of the chatbot. This second instance, called the "feedback_chatbot", is instructed to give feedback or help clarify the user's input.
+
+
+Once the feedback is obtained, it is added to the conversation as if the user themselves provided it. This helps the main chatbot understand the user's intention better and provide more accurate responses. The process repeats continuously, ensuring that the chatbot's responses are consistently improved and fine-tuned based on the user's input and the feedback from the feedback_chatbot.
 
 
 
@@ -22,7 +28,7 @@ The chatbot will respond with an answer.
 
 If autoprompt is enabled, the program will loop through the autoprompt process, displaying the chatbot's responses.
 
-At any point, users can choose to update or not update the conversation file by responding to the "don't update file?" prompt with "y" or "n".
+Remember to set your `api_ key` and customize any settings as needed before running the program. By following these steps, you'll be able to take full advantage of the autoprompt feature to improve the chatbot's responses and better understand user inputs.
 
 
 
@@ -36,6 +42,20 @@ Ensure that the required packages are installed by running `pip install openai`.
 Open the main Python file (`gpt-auto-prompter.py`) in a text editor and set the `api_key` variable at the top to your OpenAI API key in str format.
 
 Run the program with `python gpt-auto-prompter.py`.
+
+
+
+
+
+Key components of the program:
+
+
+Chatbot: A class that represents a chatbot, with methods for interacting with the OpenAI API and handling the conversation.
+
+Conversation: A class that manages the conversation, keeping track of messages and their roles (user, assistant, or system).
+
+autoprompt: A function that takes the conversation, chatbot, and feedback_chatbot instances and handles the autoprompting process.
+
 
 
 
