@@ -41,7 +41,7 @@ The program will prompt users for various inputs to customize their interaction 
 `Conversation name`: Provide a name for the conversation. The program will save the conversation history to a JSON file with this name.
 
 
-    New or existing conversation: Choose whether to create a new conversation or load an existing one from a JSON file.
+   `New or existing conversation`: Choose whether to create a new conversation or load an existing one from a JSON file.
 
 
 `System message`: Enter a system message, which is a prompt that helps set the context for the conversation with the chatbot.
@@ -49,8 +49,11 @@ The program will prompt users for various inputs to customize their interaction 
 
 `Autoprompt`: Choose whether to enable the autoprompt feature by responding with "y" or "n".
 
-    `Autoprompt system message`: If autoprompt is enabled, provide a system message for the autoprompt.
+   `Autoprompt system message`: If autoprompt is enabled, provide a system message for the autoprompt.
 
-    `Autoprompt message limit`: If autoprompt is enabled, specify the number of messages the autoprompt should use in its feedback loop.
+   `Autoprompt message limit`: If autoprompt is enabled, specify the number of messages the autoprompt should use in its feedback loop.
+    
+    
+To stop the program press `CTRL + C` on the `terminal`
 
 Enjoy interacting with the chatbot and exploring the power of the autoprompt feature!
