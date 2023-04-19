@@ -66,4 +66,8 @@ To stop the program press `CTRL + C` on the `terminal`
 
 
 
+When token reaches 4k, program will hault, a feature to forget past mesasges will be implemented at some point
+
+
+
 Enjoy interacting with the chatbot and exploring the power of the autoprompt feature!
