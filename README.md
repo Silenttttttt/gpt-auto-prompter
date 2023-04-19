@@ -1,16 +1,20 @@
 # OpenAI Chatbot with Autoprompt
 This Python program demonstrates how to interact with OpenAI's GPT-3.5-turbo model using the Chat API, featuring a powerful autoprompt functionality. The autoprompt helps clarify user inputs and ensures that the chatbot provides more accurate and relevant responses. The main goal of this description is to highlight user inputs and their roles in using the program effectively, or at least that's what the AI said.
 
+
 Tested in:
 Python 3.10.10+
 
 OpenAI Python Library: Install it with `pip install openai`
 
+
 Autoprompt and Interacting with the Chatbot
 The main feature of this program is the autoprompt, which helps users get more accurate and relevant responses from the chatbot by clarifying their inputs, or wild outputs, this is completely untested.
 
 
+
 To interact with the chatbot:
+
 
 Enter your message and end it with a "`|`" character in a new empty line at the end.
 
@@ -21,7 +25,9 @@ If autoprompt is enabled, the program will loop through the autoprompt process, 
 At any point, users can choose to update or not update the conversation file by responding to the "don't update file?" prompt with "y" or "n".
 
 
+
 How to Use the Program
+
 
 Clone the repository and navigate to the project folder.
 
@@ -33,7 +39,9 @@ Run the program with `python gpt-auto-prompter.py`.
 
 
 
+
 User Inputs
+
 
 The program will prompt users for various inputs to customize their interaction with the chatbot:
 
@@ -55,5 +63,7 @@ The program will prompt users for various inputs to customize their interaction 
     
     
 To stop the program press `CTRL + C` on the `terminal`
+
+
 
 Enjoy interacting with the chatbot and exploring the power of the autoprompt feature!
