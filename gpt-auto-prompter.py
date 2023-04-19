@@ -1,10 +1,6 @@
 import os
 import openai
 import json
-import time
-import inspect
-
-import sys
 
 
 
@@ -171,12 +167,17 @@ def main(api_key):
 
     auto_prompt = input("Do you want to enable auto-prompting? (y/n): ").lower() == "y"
     auto_prompt_sys_message = None
-    auto_prompt_message_limit = 2
+    
         
 
     if auto_prompt:
         auto_prompt_sys_message = input("What is the system auto-prompt message?: ")
-        auto_prompt_message_limit = int(input("How many messages should the auto-prompt use?: "))
+        try:
+            auto_prompt_message_limit = int(input("How many messages should the auto-prompt use?: "))
+        except:
+            auto_prompt_message_limit = 3
+            print(f"Got error, using default: {auto_prompt_message_limit}")
+            
 
     interact_chat(conversation, chatbot, conversation_filename, sys_message, auto_prompt, auto_prompt_sys_message, auto_prompt_message_limit, feedback_chatbot)
 
